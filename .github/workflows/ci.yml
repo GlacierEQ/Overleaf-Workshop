@@ -35,6 +35,9 @@ jobs:
       - name: Compile extension and webview
         run: npm run compile
 
+      - name: Run Unit Tests
+        run: npm run test:unit
+
       - name: Verify VSCE Package
         run: |
           npx --yes @vscode/vsce package --no-git-tag-version

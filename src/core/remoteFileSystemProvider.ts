@@ -127,6 +127,12 @@ export class VirtualFileSystem extends vscode.Disposable {
     public readonly serverName: string;
     public readonly projectId: string;
 
+    public getPublicId(): string | undefined {
+        return this.publicId;
+    }
+
+
+
     constructor(context: vscode.ExtensionContext, uri: vscode.Uri, notify: (events:vscode.FileChangeEvent[])=>void) {
         // define the dispose behavior
         super(() => {

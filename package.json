@@ -381,6 +381,11 @@
         "title": "%commands.collaboration.jumpToUser.title%",
         "enablement": "resourceScheme == overleaf-workshop || overleaf-workshop.activate",
         "category": "%extension.displayName%"
+      },
+      {
+        "command": "overleaf-workshop.agent.run",
+        "title": "Run Agentic Assistant",
+        "category": "Overleaf Workshop"
       }
     ],
     "keybindings": [
@@ -492,6 +497,24 @@
           "default": true,
           "scope": "machine",
           "markdownDescription": "%configuration.formatWithLineBreak.enabled.markdownDescription%"
+        },
+        "overleaf-workshop.agent.baseUrl": {
+          "type": "string",
+          "default": "https://api.openai.com/v1",
+          "scope": "machine",
+          "markdownDescription": "Base URL for OpenAI-compatible LLM API."
+        },
+        "overleaf-workshop.agent.apiKey": {
+          "type": "string",
+          "default": "",
+          "scope": "machine",
+          "markdownDescription": "API key for the LLM provider."
+        },
+        "overleaf-workshop.agent.model": {
+          "type": "string",
+          "default": "gpt-4o-mini",
+          "scope": "machine",
+          "markdownDescription": "Model name for the agent."
         }
       }
     },

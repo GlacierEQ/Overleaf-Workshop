@@ -1,5 +1,7 @@
 # Overleaf Workshop
 
+[![CI](https://github.com/GlacierEQ/Overleaf-Workshop/actions/workflows/ci.yml/badge.svg)](https://github.com/GlacierEQ/Overleaf-Workshop/actions/workflows/ci.yml)
+[![Package Extension](https://github.com/GlacierEQ/Overleaf-Workshop/actions/workflows/vsce-package.yml/badge.svg)](https://github.com/GlacierEQ/Overleaf-Workshop/actions/workflows/vsce-package.yml)
 [![GitHub Repo stars](https://img.shields.io/github/stars/overleaf-workshop/Overleaf-Workshop)](https://github.com/overleaf-workshop/Overleaf-Workshop)
 [![version](https://img.shields.io/visual-studio-marketplace/v/iamhyc.overleaf-workshop)](https://marketplace.visualstudio.com/items?itemName=iamhyc.overleaf-workshop)
 [![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/iamhyc.overleaf-workshop)](https://marketplace.visualstudio.com/items?itemName=iamhyc.overleaf-workshop)
@@ -76,6 +78,11 @@ The following Overleaf (ShareLatex) Community Edition docker images provided on 
 
 - [ ] [sharelatex/sharelatex:3.0](https://hub.docker.com/layers/sharelatex/sharelatex/3.0/images/sha256-a36e54c66ef62fdee736ce2229289aa261b44f083a9fd553cf8264500612db27?context=explore)
 
+### Agentic Assistant
+
+The extension ships an agentic assistant (command `Overleaf Workshop: Run Agentic Assistant`) that can read/write/search project files and compile using an OpenAI-compatible LLM. Configure under settings `overleaf-workshop.agent` (baseUrl, apiKey, model). Output streams to the "Overleaf Agent" output channel.
+
+---
 ### Development
 
 Please refer to the development guidance in [CONTRIBUTING.md](./CONTRIBUTING.md)
